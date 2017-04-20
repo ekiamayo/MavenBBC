@@ -1,0 +1,373 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Maxwell"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7088135600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Register.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 337419,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Signin.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 294225,
+              "status": "passed"
+            },
+            "match": {
+              "location": "pattern.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "As a new user I want to create an account",
+        "description": "",
+        "id": "bbc-register-new-user;as-a-new-user-i-want-to-create-an-account;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15361883216,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the BBC HomePage",
+            "match": {
+              "location": "pattern.i_am_on_the_BBC_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6058993560,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click sign in",
+            "match": {
+              "location": "Register.i_click_sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998223526,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click Register Now",
+            "match": {
+              "location": "Register.i_click_Register_Now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 408816083,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify that I am above the standard age",
+            "match": {
+              "location": "Register.verify_that_I_am_above_the_standard_age()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 782269474,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I choose the option that I am over standard age",
+            "match": {
+              "location": "Register.i_choose_the_option_that_I_am_over_standard_age()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1245116621,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I type email \"pete@gmail.com\" address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pete@gmail.com",
+                  "offset": 14
+                }
+              ],
+              "location": "Register.i_type_email_address(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1062571739,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I type password \"password123\" in the password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password123",
+                  "offset": 17
+                }
+              ],
+              "location": "Register.i_type_password_in_the_password_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 738587203,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I insert postcode \"PE2 6FZ\" in the postcode field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PE2 6FZ",
+                  "offset": 19
+                }
+              ],
+              "location": "Register.i_insert_postcode_in_the_postcode_field(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 336377516,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select No email personalisation",
+            "match": {
+              "location": "Register.i_select_No_email_personalisation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2436630260,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click Register button",
+            "match": {
+              "location": "Register.i_click_Register_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Register"
+          }
+        ]
+      }
+    ],
+    "name": "BBC Register New User",
+    "description": "",
+    "id": "bbc-register-new-user",
+    "keyword": "Feature",
+    "uri": "BBCRegister.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Maxwell"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 467854,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Register.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 245046,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Signin.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 223663,
+              "status": "passed"
+            },
+            "match": {
+              "location": "pattern.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "As a Registered user I want to sign in successfully",
+        "description": "",
+        "id": "bbc-sign-in;as-a-registered-user-i-want-to-sign-in-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4773162158,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the BBC HomePage",
+            "match": {
+              "location": "pattern.i_am_on_the_BBC_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1764172447,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click sign in",
+            "match": {
+              "location": "Register.i_click_sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 942098240,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I type email address \"maxtest964@gmail.com\" in the email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "maxtest964@gmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "Signin.i_type_email_address_in_the_email_field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 371114552,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I type password account \"today001\" in the password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "today001",
+                  "offset": 25
+                }
+              ],
+              "location": "Signin.i_type_password_account_in_the_password_text_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3670697589,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click sign in button",
+            "match": {
+              "location": "Signin.i_click_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13021277059,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify that I am logged in successfully",
+            "match": {
+              "location": "Signin.i_verify_that_I_am_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3382880162,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I log out from my account",
+            "match": {
+              "location": "Signin.i_log_out_from_my_account()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Signin"
+          }
+        ]
+      }
+    ],
+    "name": "BBC Sign in",
+    "description": "",
+    "id": "bbc-sign-in",
+    "keyword": "Feature",
+    "uri": "BBCSignin.feature"
+  }
+]
